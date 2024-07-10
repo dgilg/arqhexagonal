@@ -1,27 +1,26 @@
-package com.example.hexagonal.domain.model;
+package com.example.hexagonal.adapters.out.persistence;
+
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
-public class Order {
+@Table(name = "OrderEntity")
+@Entity
+public class OrderEntity {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	private LocalDateTime creationDate;
 	private String status;
 
-	public Order() {
-		super();
+	public OrderEntity() {
 	}
 
-	public Order(final LocalDateTime creationDate, final String status) {
-		this();
+	public OrderEntity(final LocalDateTime creationDate, final String status) {
 		this.creationDate = creationDate;
 		this.status = status;
-	}
-
-	public Order(final Long id, final LocalDateTime creationDate, final String status) {
-		this(creationDate, status);
-		this.id = id;
 	}
 
 	public Long getId() {
