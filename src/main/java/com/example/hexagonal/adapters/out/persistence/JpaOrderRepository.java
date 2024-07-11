@@ -1,7 +1,7 @@
 package com.example.hexagonal.adapters.out.persistence;
 
 import com.example.hexagonal.adapters.out.persistence.mapper.OrderEntityMapper;
-import com.example.hexagonal.application.ports.OrderRepository;
+import com.example.hexagonal.application.ports.out.OrderRepository;
 import com.example.hexagonal.domain.model.Order;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;

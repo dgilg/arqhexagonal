@@ -1,4 +1,4 @@
-package com.example.hexagonal.application.ports;
+package com.example.hexagonal.application.ports.out;
 
 import com.example.hexagonal.domain.model.Order;
 

@@ -1,6 +1,6 @@
 package com.example.hexagonal.application.service;
 
-import com.example.hexagonal.application.ports.OrderRepository;
+import com.example.hexagonal.application.ports.out.OrderRepository;
 import com.example.hexagonal.domain.model.Order;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

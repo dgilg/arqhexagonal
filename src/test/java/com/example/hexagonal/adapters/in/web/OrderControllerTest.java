@@ -1,6 +1,6 @@
 package com.example.hexagonal.adapters.in.web;
 
-import com.example.hexagonal.application.service.OrderService;
+import com.example.hexagonal.application.ports.in.OrderServiceUseCase;
 import com.example.hexagonal.domain.model.Order;
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.common.mapper.TypeRef;
@@ -24,7 +24,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class OrderControllerTest {
 
 	@Mock
-	private OrderService orderService;
+	private OrderServiceUseCase orderService;
 
 	@InjectMocks
 	private OrderController orderController;

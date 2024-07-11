@@ -1,11 +1,11 @@
-package com.example.hexagonal.application.service;
+package com.example.hexagonal.application.ports.in;
 
 import com.example.hexagonal.domain.model.Order;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface OrderService {
+public interface OrderServiceUseCase {
 
 	Order createOrder(final Order order);
 

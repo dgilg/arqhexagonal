@@ -1,6 +1,6 @@
 package com.example.hexagonal.adapters.in.web;
 
-import com.example.hexagonal.application.service.OrderService;
+import com.example.hexagonal.application.ports.in.OrderServiceUseCase;
 import com.example.hexagonal.domain.model.Order;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
@@ -15,7 +15,7 @@ import java.util.Optional;
 public class OrderController {
 
 	@Inject
-	private OrderService orderService;
+	private OrderServiceUseCase orderService;
 
 	@POST
 	public Response createOrder(final Order order) {
