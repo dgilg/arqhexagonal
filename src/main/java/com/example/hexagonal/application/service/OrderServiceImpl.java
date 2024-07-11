@@ -40,4 +40,5 @@ public class OrderServiceImpl implements OrderServiceUseCase {
 	public void deleteOrder(Long id) {
 		this.orderRepository.deleteById(id);
 	}
+
 }

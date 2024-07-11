@@ -1,6 +1,5 @@
 package com.example.hexagonal.adapters.in.web;
 
-import com.example.hexagonal.application.ports.in.OrderServiceUseCase;
 import com.example.hexagonal.domain.model.Order;
 import io.quarkus.test.junit.QuarkusTest;
 import io.restassured.common.mapper.TypeRef;
@@ -9,7 +8,6 @@ import jakarta.ws.rs.core.MediaType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import java.time.LocalDateTime;
@@ -22,9 +20,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @QuarkusTest
 @Transactional
 public class OrderControllerTest {
-
-	@Mock
-	private OrderServiceUseCase orderService;
 
 	@InjectMocks
 	private OrderController orderController;

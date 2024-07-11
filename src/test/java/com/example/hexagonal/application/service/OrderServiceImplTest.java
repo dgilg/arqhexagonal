@@ -27,6 +27,7 @@ public class OrderServiceImplTest {
 	@BeforeEach
 	void setUp() {
 		MockitoAnnotations.openMocks(this);
+		this.orderService = new OrderServiceImpl(this.orderRepository);
 	}
 
 	@Test
